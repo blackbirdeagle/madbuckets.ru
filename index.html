@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+
+
+    <title>Главная</title>
+
+</head>
+<body>
+
+<div class = "overlay"></div>
+
+<div class="popup become-pp">
+    <a class="close1" href="#">X</a>
+    <div class="head">Стать участником</div>
+    <form method = "POST" action = "">
+        <div class = "row">
+            <div class = "col-md-6">
+                <label>Марка, модель, год выпуска</label>
+                <input type = "text" name = "marka_model_year"/>
+            </div>
+            <div class = "col-md-6">
+                <label>Заявленная мощность</label>
+                <input type = "text" name = "power" class = "phone"/>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <label>Описание, список доработок</label>
+                <textarea name = "list_dev"></textarea>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <label>Фио экипажа, 2 человека, полностью</label>
+                <input type = "text" name = "fio"/>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-6">
+                <label>Номер</label>
+                <input type = "text" name = "number"/>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-6">
+                <label>E-mail</label>
+                <input type = "text" name = "email"/>
+            </div>
+            <div class = "col-md-6">
+                <label>Телефон</label>
+                <input type = "text" class = "phone" name = "phone"/>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <label>Выбор программы участия</label>
+                <select name = "select_program">
+                    <option value = "5700">Размещение 29.06-30.06, гонка, вечеринка - 5700 руб.</option>
+                    <option value = "5700">Размещение 29.06-30.06, гонка, вечеринка - 5700 руб.</option>
+                    <option value = "5700">Размещение 29.06-30.06, гонка, вечеринка - 5700 руб.</option>
+                </select>
+            </div>
+        </div>
+
+        <a class = "send_mess" href = "javascript:void(0);">Забронировать</a>
+    </form>
+</div>
+
+<div class="popup buy-pp">
+    <a class="close1" href="#">X</a>
+    <div class="head">Купить билет</div>
+    <form method = "POST" action = "">
+        <div class = "row">
+            <div class = "col-md-6">
+                <label>Фио</label>
+                <input type = "text" name = "fio"/>
+            </div>
+            <div class = "col-md-6">
+                <label>Телефон</label>
+                <input type = "text" name = "phone" class = "phone"/>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-6">
+                <label>E-mail</label>
+                <input type = "text" name = "email"/>
+            </div>
+            <div class = "col-md-6">
+                <label>кол-во билетов</label>
+                <input type = "text" name = "kolvo"/>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <label>Выбор программы участия</label>
+                <select>
+                    <option value = "5700">Размещение 29.06-30.06, гонка, вечеринка - 5700 руб.</option>
+                    <option value = "5700">Размещение 29.06-30.06, гонка, вечеринка - 5700 руб.</option>
+                    <option value = "5700">Размещение 29.06-30.06, гонка, вечеринка - 5700 руб.</option>
+                </select>
+            </div>
+        </div>
+
+        <a class = "send_mess" href = "javascript:void(0);">Забронировать</a>
+    </form>
+</div>
+
+<div class = "float__menu">
+    <a class = "hide__menu" href = "javascript:void(0);">X</a>
+    <ul>
+        <li><a href = "">Расписание мероприятий</a></li>
+        <li><a href = "">Отчеты о мероприятиях</a></li>
+        <li><a href = "">О нас</a></li>
+    </ul>
+</div>
+
+<header class = "header">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <a href = "javascript:void(0);" class = "show_menu"><img src = "images/menu.png"/></a>
+                <ul class = "social">
+                    <li><a href = ""><img src = "images/fb.png" /></a></li>
+                    <li><a href = ""><img src = "images/inst.png" /></a></li>
+                    <li><a href = ""><img src = "images/vk.png" /></a></li>
+                    <li><a href = ""><img src = "images/yt.png" /></a></li>
+                    <li><a href = ""><img src = "images/telegram.png" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <a href = "/" class = "header__logo"><img src = "images/logo.png" /></a>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class = "upcoming__event">
+                    <p class = "event__head">RUSSIAN WEEKEND DRAGS В КРЫМУ</p>
+                    <p class = "event__date">26 июня</p>
+                    <div class = "upcoming__event__buttons">
+                        <a href = "javascript:void(0);" class = "become__member" popup-target = "become-pp">Стать участником</a>
+                        <a href = "javascript:void(0);" class = "buy__tickets" popup-target = "buy-pp">Купить билеты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class = "past__events">
+    <div class = "container">
+        <div class = "past__events__items">
+            <div class = "row">
+                <div class = "col-md-4 col-sm-4 col-xs-6 col-event">
+                    <a href = "" class = "past__events__item"><img src = "images/pic1.png" /></a>
+                </div>
+                <div class = "col-md-4 col-sm-4 col-xs-6 col-event">
+                    <a href = "" class = "past__events__item"><img src = "images/pic2.png" /></a>
+                </div>
+                <div class = "col-md-4 col-sm-4 col-xs-6 col-event">
+                    <a href = "" class = "past__events__item"><img src = "images/pic3.png" /></a>
+                </div>
+                <div class = "col-md-4 col-sm-4 col-xs-6 col-event">
+                    <a href = "" class = "past__events__item"><img src = "images/pic1.png" /></a>
+                </div>
+                <div class = "col-md-4 col-sm-4 col-xs-6 col-event">
+                    <a href = "" class = "past__events__item"><img src = "images/pic2.png" /></a>
+                </div>
+                <div class = "col-md-4 col-sm-4 col-xs-6 col-event">
+                    <a href = "" class = "past__events__item"><img src = "images/pic3.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "schedule">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class = "schedule__img">
+                    <img src = "images/flags.png" />
+                    <p class = "schedule__head">расписание мероприятий</p>
+                </div>
+            </div>
+        </div>
+        <div class = "schedule__item">
+            <div class = "row">
+                <div class = "col-md-12">
+                    <div class = "schedule__item__date">
+                        <p class = "schedule__item__date__squar"><span>26</span><br/>июнь</p>
+                    </div>
+                    <p class = "schedule__item__head">RUSSIAN WEEKEND DRAGS<br/>
+                        в крыму</p>
+                    <p class = "schedule__item__preview-text">Объединяет в себе формат классического дрэг рейсинга в духе старой школы на уникальных классических и культовых автомобилях и фестиваля с теплой дружеской атмосферой, выставкой автомобилей и уютной вечеринкой.</p>
+                    <a href = "" class = "schedule__item__detail">подробно о мероприятии</a>
+                    <div class="upcoming__event__buttons">
+                        <a href="javascript:void(0);" class="become__member" popup-target = "become-pp">Стать участником</a>
+                        <a href="javascript:void(0);" class="buy__tickets" popup-target = "buy-pp">Купить билеты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "schedule__item">
+            <div class = "row">
+                <div class = "col-md-12">
+                    <div class = "schedule__item__date">
+                        <p class = "schedule__item__date__squar"><span>01</span><br/>декабря</p>
+                    </div>
+                    <p class = "schedule__item__head">RUSSIAN WEEKEND DRAGS<br/>
+                        в москве</p>
+                    <p class = "schedule__item__preview-text">Объединяет в себе формат классического дрэг рейсинга в духе старой школы на уникальных классических и культовых автомобилях и фестиваля с теплой дружеской атмосферой, выставкой автомобилей и уютной вечеринкой.</p>
+                    <a href = "" class = "schedule__item__detail">подробно о мероприятии</a>
+                    <div class="upcoming__event__buttons">
+                        <a href="javascript:void(0);" class="become__member" popup-target = "become-pp">Стать участником</a>
+                        <a href="javascript:void(0);" class="buy__tickets" popup-target = "buy-pp">Купить билеты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "slider">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class = "slider__text">
+                    <img src = "images/logo_black.png"/>
+                    <p>Команда Mad Buckets организует культурные и спортивные мероприятия<br/>
+                        с участием классических и культовых автомобилей.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slider1" class="slider">
+        <ul>
+            <li><a class = "fancybox" data-fancybox-group="gallery" href = "images/slide1.jpg"><img height = "380" src="images/slide1.jpg"  alt=""/></a></li>
+            <li><a class = "fancybox" data-fancybox-group="gallery" href = "images/slide2.jpg"><img height = "380" src="images/slide2.jpg"  alt=""/></a></li>
+            <li><a class = "fancybox" data-fancybox-group="gallery" href = "images/slide3.jpg"><img height = "380" src="images/slide3.jpg"  alt=""/></a></li>
+        </ul>
+    </div>
+
+    <ul class = "controls">
+        <li><a href="javascript:void(0);" class="prev-slide"></a></li>
+        <li><img src = "images/frames.png" /></li>
+        <li><a href="javascript:void(0);" class="next-slide"></a></li>
+    </ul>
+</section>
+
+<section class = "reports">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class="schedule__img">
+                    <img src="images/foto.png">
+                    <p class="schedule__head">Отчеты о мероприятиях</p>
+                </div>
+            </div>
+        </div>
+        <div class = "reports__items">
+            <div class = "row">
+                <div class = "col-md-4 col-sm-6 col-xs-6 col-reports">
+                    <a href = "" class = "reports__item">
+                        <img src = "images/img1.jpg" />
+                        <p class = "reports__item__date">25/06/18</p>
+                        <p class = "reports__item__name">RUSSIAN WEEKEND DRAGS
+                            в крыму</p>
+                    </a>
+                </div>
+                <div class = "col-md-4 col-sm-6 col-xs-6 col-reports">
+                    <a href = "" class = "reports__item">
+                        <img src = "images/img2.jpg" />
+                        <p class = "reports__item__date">25/06/18</p>
+                        <p class = "reports__item__name">RUSSIAN WEEKEND DRAGS
+                            в крыму</p>
+                    </a>
+                </div>
+                <div class = "col-md-4 col-sm-6 col-xs-6 col-reports">
+                    <a href = "" class = "reports__item">
+                        <img src = "images/img2.jpg" />
+                        <p class = "reports__item__date">25/06/18</p>
+                        <p class = "reports__item__name">RUSSIAN WEEKEND DRAGS
+                            в крыму</p>
+                    </a>
+                </div>
+                <div class = "col-md-4 col-sm-6 col-xs-6 col-reports">
+                    <a href = "" class = "reports__item">
+                        <img src = "images/img1.jpg" />
+                        <p class = "reports__item__date">25/06/18</p>
+                        <p class = "reports__item__name">RUSSIAN WEEKEND DRAGS
+                            в крыму</p>
+                    </a>
+                </div>
+                <div class = "col-md-4 col-sm-6 col-xs-6 col-reports">
+                    <a href = "" class = "reports__item">
+                        <img src = "images/img2.jpg" />
+                        <p class = "reports__item__date">25/06/18</p>
+                        <p class = "reports__item__name">RUSSIAN WEEKEND DRAGS
+                            в крыму</p>
+                    </a>
+                </div>
+                <div class = "col-md-4 col-sm-6 col-xs-6 col-reports">
+                    <a href = "" class = "reports__item">
+                        <img src = "images/img2.jpg" />
+                        <p class = "reports__item__date">25/06/18</p>
+                        <p class = "reports__item__name">RUSSIAN WEEKEND DRAGS
+                            в крыму</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class = "footer">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <p class = "footer__head">следите за обновлениями на сайте<br/>
+                    и соцсетях</p>
+                <ul class = "footer__social">
+                    <li><a href = ""><img src = "images/fb.png" /></a></li>
+                    <li><a href = ""><img src = "images/inst.png" /></a></li>
+                    <li><a href = ""><img src = "images/vk.png" /></a></li>
+                    <li><a href = ""><img src = "images/yt.png" /></a></li>
+                    <li><a href = ""><img src = "images/telegram.png" /></a></li>
+                </ul>
+                <p class = "hash__tag">#madbuckets</p>
+                <p class = "accreditation">Акредитация для прессы и коммерческих предложений:</p>
+                <a class = "footer__mail" href = "mailto:russianvintageracing@gmail.com">russianvintageracing@gmail.com</a>
+                <a href = "" class = "policy">Пользовательское соглашение</a>
+                <div class = "copyright">
+                    <p>Copyright MadBuckets, 2018</p>
+                    <a href = "http://www.colortime.ru/">Сайт создан в Colortime</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="plugins/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript" src="js/lemmon-slider.js"></script>
+<script type="text/javascript" src="js/maskedinput.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
